@@ -1,0 +1,211 @@
+body {
+  min-width: 800px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff; /*Cor de fundo da página*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+body,
+html {
+  color: #59637c; /*Cor do texto: Explicação do que é a roda financeira*/
+  font-family: Open Sans, sans-serif;
+}
+
+.wrapper-content {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown,
+h1,
+h2,
+h3 {
+  color: #17253c; /*Cor dos títulos h1, h2 e h3 */
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #000000; /*cor da fonte do titulo*/
+  background-color: #0a9e941e; /*cor da background do titulo*/
+  padding: 1em 0;
+}
+
+form {
+  margin: 0 auto;
+}
+
+#chart {
+  text-align: center;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#chart .layer-0 path,
+#chart .layer-1 path {
+  fill: #fff;
+}
+
+input {
+  margin-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+input[type="text"] {
+  color: #444; /*Cor do texto dos inputs*/
+  min-width: 200px;
+  line-height: 2;
+}
+
+input[type="number"] {
+  max-width: 50px;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  color: #000; /*Cor do texto dos inputs em focus*/
+  outline: none;
+  background: #ecececaf; /*Cor de fundo dos inputs*/
+}
+
+input[type="color"] {
+  border: none;
+  outline: none;
+  background: none;
+  margin-right: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="color"]:focus {
+  border: 2px solid #000;
+}
+
+label:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+form {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+  text-align: left;
+  display: inline-flex;
+  margin: 0.2em 0;
+  align-items: center;
+}
+
+.button {
+  margin: 2em auto;
+  padding: 0.8em 2em;
+  color: #fff; /*Cor do texto do botão SALVAR*/
+  background: #0A9E95; /*Cor de fundo do botão SALVAR*/
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 0 3px 0 #b0b1b0; /*Cor de sombreamento do botão SALVAR*/
+  transition: background 0.3s ease-in;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height:1em;
+  stroke-width: 0;
+  stroke: #fff;
+  fill: #fff;
+  margin-left: 0.5em;
+}
+
+.dropdown {
+  font-weight: 400;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+}
+
+.highlight div {
+  padding: 0 1em 1em;
+}
+
+.highlight.is-active {
+  background-color: rgba(24, 185, 121, 0.0784313725490196);
+}
+
+.dropdown .icon {
+  fill: #0A9E95; /*Cor dos icones "setas" das dropdowns*/
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+.disclaimer {
+  margin: 5em 0 1em;
+  font-size: 0.75em;
+  border-top: 1px solid;
+}
+
+.wrapper-tool {
+  background-color: #0a9e940a; /*Cor de fundo do box dos inputs e mandala*/
+  margin-top: 2em;
+  padding: 1em;
+}
+
+@media (min-width: 1280px) {
+  .wrapper-tool .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper-tool form {
+    width: 35%;
+  }
+
+  .wrapper-tool #chart {
+    width: 65%;
+  }
+
+  form {
+    margin: 0 2em;
+    text-align: left;
+  }
+
+  .button {
+    margin: 2em auto;
+  }
+}
